@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+.product-img {
+    height: 180px !important;
+    object-fit: cover !important;
+    display: block;
+    border-radius: 10px !important;
+    width: 100% !important;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+    font-size: 60px;
+    text-shadow: 0 0 4px #ffffff;
+    font-weight: 700;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bnt {
+    width: 220px;
+    height: 100px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.bnt:hover {
+    transform: scale(1.05);
+}
+
+.bnt:active {
+    transform: scale(0.95);
+}
+
+span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#foreach {
+    background-color: #2ecc71;
+}
+
+#map {
+    background-color: #f1c40f;
+    color: #000;
+}
+
+#reduce {
+    background-color: #e74c3c;
+}
+
+#filter {
+    background-color: #27ae60;
+}
+
+#products-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px
+}
+
+.menu {
+    margin-top: 20px
+}
+
+.card-buger {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-name {
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.product-price {
+    color: #ffca28;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 950px) {
+
+    .controls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+        gap: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    .controls {
+        display: grid;
+        grid-template-columns: none;
+        gap: 10px;
+    }
+
+    .bnt {
+        width: 340px;
+        height: 50px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .card-buger {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #products-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .product-img {
+        height: 150px !important;
+    }
+}
